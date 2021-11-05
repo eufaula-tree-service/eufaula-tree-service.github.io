@@ -1,20 +1,137 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1>Posts</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Eufaula Tree Service</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Eufaula Tree Service</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Safe, fast, and reliable</div>
+                <div class="masthead-heading text-uppercase">TREE REMOVAL AND TRIMMING</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Call for a quote</a>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Services</h2>
+                    <h3 class="section-subheading text-muted">We’ll leave your yard clean, clear, and safe</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-tree fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Tree Removal</h4>
+                        <p class="text-muted">If a tree is diseased, overgrown, or hazardous to your house (or a neighbor’s!) we can take care of it quickly and safely.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-cut fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Tree Trimming</h4>
+                        <p class="text-muted">Keep branches away from your house and the power lines, while keeping your trees healthy.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-trash fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Brush Clearing</h4>
+                        <p class="text-muted">Get your property clean to make way for a lawn, an orchard, or new construction.</p>
+                    </div>
+                    <div class="align-items-center">
+                        <a class="btn btn-primary btn-xl text-uppercase" href="#services">Call for a quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About us</h2>
+                    <h3 class="section-subheading text-muted">Your local tree services team</h3>
+                </div>
+                <div class="team-section d-flex flex-column">
+                    <div class="d-flex justify-content-center">
+                        <img class="rounded-circle w-25" src="assets/img/about/1.jpg">
+                    </div>
+                    <div class="m-2">
+                        <h3>Matt Panjic</h3>
+                        <p>I was born and raised in Eufaula, and I’ve been trimming trees since 2012. It’s my pleasure to keep your property beautiful, your trees, healthy, and your family safe.</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FEufaula-Tree-Service-LLC-101519942275534%2F&tabs=timeline%2C%20events%2C%20messages&width=400&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="360" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+        </section>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">For a fast response, just send us a text message. You can also call or reach out on Facebook.</h3>
+                </div>
+                <div class="row my-2">
+                    <a class="btn btn-primary btn-xl text-uppercase" href="#services">Send us a text</a>
+                </div>
+                <div class="row my-2">
+                    <a class="btn btn-primary btn-xl text-uppercase" href="#services">Call for a quote</a>
+                </div>
+                <div class="row my-2">
+                    <a class="btn btn-primary btn-xl text-uppercase" href="#services">Call for a quote</a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 text-lg-start">Copyright &copy; Eufaula Tree Service 2021</div>
+                    <div class="col-lg-6 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
